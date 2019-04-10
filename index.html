@@ -8,105 +8,198 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
 <body>
 
-  <form class="max-length gutter pad-t-2 pad-b-2" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
+  <form class="max-length gutter push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
 
-<div>
-  <h1>Volunteer Sign-up</h1>
+    <div class="banner">
+      <h1>Apply to be a tree planter</h1>
+      <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    </div>
 
-Apply to be a tree planter
-Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.
+    <fieldset>
+      <legend class="giga unit xs-1">Personal details</legend>
+      <div class="grid">
 
-Personal details
+        <div class="push space-right unit xs-1 l-1-2">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required>
+          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        </div>
 
-Full name
-Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.
+        <div class="push space-right unit xs-1 l-1-2">
+          <label for="nickname">What should we call you?</label>
+          <input id="nickname" name="nickname" required>
+          <p>What all your friends call you, e.g. “Liz”.</p>
+        </div>
 
-What should we call you?
-What all your friends call you, e.g. “Liz”.
+        <div class="push space-right unit xs-1 l-1-2">
+          <label for="dob">Date of birth</label>
+          <input id="dob" name="dob" placeholder="yyyy-mm-dd" required>
+        </div>
 
-Date of birth
+        <div>
+          <label for="size">T-shirt size</label>
+          <input id="size" list="size-list" placeholder="Select a t-shirt size" required>
+          <datalist id="province-list">
+            <option value="Fitted: XS">
+              <option value="Fitted: S">
+                <option value="Fitted: M">
+                  <option value="Fitted: L">
+                    <option value="Fitted: XL">
+                      <option value="Straight-cut: XS">
+                        <option value="Straight-cut: S">
+                          <option value="Straight-cut: M">
+                            <option value="Straight-cut: L">
+                              <option value="Straight-cut: XL">
+                              </datalist>
+                            </div>
 
-T-shirt size
-- Select a t-shirt size
-- Fitted: XS
-- Fitted: S
-- Fitted: M
-- Fitted: L
-- Fitted: XL
-- Straight-cut: XS
-- Straight-cut: S
-- Straight-cut: M
-- Straight-cut: L
-- Straight-cut: XL
+                            <div class="push space-right unit xs-1 l-1-2">
+                              <label for="email">Email</label>
+                              <input id="email" type="email" required>
+                            </div>
 
-Email
-Phone number (optional)
 
-Address
-Street address
-City
-Postal code
+                            Phone number (optional)
+                            <div class="push space-left unit xs-1 l-1-2">
+                              <label for="phone">Phone</label>
+                              <input id="phone" type="text">
+                            </div>
+                          </div>
 
-Province
-- Select a province
-- Alberta
-- British Columbia
-- Manitoba
-- New Brunswick
-- Newfoundland & Labrador
-- Northwest Territories
-- Nova Scotia
-- Nunavut
-- Ontario
-- Prince Edward Island
-- Québec
-- Saskatchewan
-- Yukon
+                        </fieldset>
 
-What activities are you interested in helping with?
-- Digging holes
-- Getting dirty
-- Lifting heavy objects
-- Driving people
-- Transporting trees
-- Taking photos
-- Online publishing
-- Managing people
+                        <fieldset>
+                          <legend class="giga unit xs-1">Address</legend>
+                          <div class="grid">
 
-Do you have any experience with the following?
-- Shovels
-- Hand-held GPS
-- Writing & blogging
-- Photography
-- Trail & hill climbing
-- Bush craft
-- ATVs
-- Plant identification
-- Special event planning
-- Speaking to groups
+                            <div>
+                              <label for="street-address">Street Address</label>
+                              <input id="street-address">
+                            </div>
+                            <div>
+                              <label for="city">City</label>
+                              <input id="city">
+                            </div>
+                            <div>
+                              <label for="size">Province</label>
+                              <input id="size" list="size-list" placeholder="Select a province" required>
+                              <datalist id="province-list">
+                                <option value="Alberta">
+                                  <option value="British Columbia">
+                                    <option value="Manitoba">
+                                      <option value="New Brunswick">
+                                        <option value="Newfoundland & Labrador">
+                                          <option value="Northwest Territories">
+                                            <option value="Nova Scotia">
+                                              <option value="Nunavut">
+                                                <option value="Ontario">
+                                                  <option value="Prince Edward Island">
+                                                    <option value="Québec">
+                                                      <option value="Saskatchewan">
+                                                        <option value="Yukon">
+                                                        </datalist>
+                                                      </div>
+                                                      <div>
+                                                        <label for="country">Country</label>
+                                                        <input id="country">
+                                                      </div>
+                                                      <div>
+                                                        <label for="postal-code">Postal Code</label>
+                                                        <input id="postal-code">
+                                                      </div>
+                                                    </fieldset>
+                                                  </div>
+                                                </fieldset>
 
-Do you have a valid driver’s license?
-- Yes
-- No
+                                                <fieldset>
+                                                  <legend>What activities are you interested in helping with?</legend>
 
-Do you have a pick-up truck you’d be willing to use?
-- Yes
-- No
+                                                  <input id="apato" type="checkbox">
+                                                  <label for="apato">Digging holes</label>
+                                                  <input id="steg" type="checkbox">
+                                                  <label for="steg">Getting dirty</label>
+                                                  <input id="trex" type="checkbox">
+                                                  <label for="trex">Lifting heavy objects</label>
+                                                  <input id="trex" type="checkbox">
+                                                  <label for="trex">Driving people</label>
+                                                  <input id="trex" type="checkbox">
+                                                  <label for="trex">Transporting trees</label>
+                                                  <input id="trex" type="checkbox">
+                                                  <label for="trex">- Taking photos</label>
+                                                  <input id="trex" type="checkbox">
+                                                  <label for="trex">Online publishing</label>
+                                                  <input id="trex" type="checkbox">
+                                                  <label for="trex">Managing people</label>
+                                                </fieldset>
 
-Do you have up-to-date first-aid certification?
-- Yes
-- No
+                                                <fieldset>
+                                                  <legend>Do you have any experience with the following?</legend>
 
-Please let us know any comments or questions you may have.
+                                                  <input id="apato" type="checkbox">
+                                                  <label for="apato">Shovels</label>
+                                                </fieldset>
 
-Apply
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Hand-held GPS</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Writing & blogging</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Photography</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Trail & hill climbing</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Bush craft</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">ATVs</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Plant identification</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Shovels</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Special event planning</label>
+                                                <input id="apato" type="checkbox">
+                                                <label for="apato">Speaking to groups</label>
+                                                -
+                                                <fieldset>
+                                                  <legend>Do you have a valid driver’s license?</legend>
 
-© Tree Hugger International Organization
+                                                  <input id="yes" type="radio" name="agree">
+                                                  <label for="yes">Yes</label>
 
-</form>
-</body>
-</html>
+                                                  <input id="no" type="radio" name="agree">
+                                                  <label for="no">No</label>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                  <legend>Do you have up-to-date first-aid certification?</legend>
+
+                                                  <input id="yes" type="radio" name="agree">
+                                                  <label for="yes">Yes</label>
+
+                                                  <input id="no" type="radio" name="agree">
+                                                  <label for="no">No</label>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                  <legend class="giga">Questions</legend>
+                                                  <div class="push">
+                                                    <label for="why">Please let us know any comments or questions you may have. (optionl)</label>
+                                                    <textarea id="why" name="message" required></textarea>
+                                                  </div>
+                                                </fieldset>
+
+                                                <div>
+                                                  <button class="btn" type="submit">Apply</button>
+                                                </div>
+                                                <input type="hidden" name="MyForm" value="VolApp">
+                                              </form>
+
+                                              <footer>© Tree Hugger International Organization</footer>
+
+                                            </form>
+                                          </body>
+                                          </html>

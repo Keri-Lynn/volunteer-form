@@ -1,4 +1,15 @@
-<!-- - *Colours:* `#fff`, `#6e8c62`, `#70ad55` -->
+html {
+  font-family: "Noto Serif", serif;
+  background-color: #fff;
+  color: #000;
+  border-color: #6e8c62;
+}
 
+.need {:
+  color: #6e8c62;
+}
 
-font-family: 'Noto Serif', serif;
+.banner {
+  background-color: #70ad55;
+  color: #fff;
+}
